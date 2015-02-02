@@ -1,0 +1,26 @@
+<%
+  edit_title = "投稿の編集"
+  edit_title = @post.present? ? "投稿の編集" : "新規投稿を追加"
+  post_title = @post.present? ? @post.title : ""
+  post_content = @post.present? ? @post.content : ""
+%>
+<div class="container">
+  <div class="container-inner">
+    <%= render 'menu' %>
+
+    <div class="post-editor">
+      <h2><%= edit_title %></h2>
+
+      <%= form_tag({ controller: "admin", action: "post_update" }, { role: "form" }) do %>
+        <div class="post-title">
+          <%= text_field_tag("post[title]", post_title, class: "form-input") %>
+        </div><!-- .post-title -->
+        <div class="post-content">
+          <%= text_area_tag("post[content]", post_content, class: "form-input", row: 10) %>
+        </div><!-- .post-content -->
+
+        <%= submit_tag('更新', class: "btn", data: { disable_with: '更新中' }) %>
+      <% end %>
+    </div><!-- .post-editor -->
+  </div><!-- .container-inner -->
+</div><!-- .container -->

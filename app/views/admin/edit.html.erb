@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="container-inner">
+    <%= render 'menu' %>
+    <div>
+      <%= link_to(post_new_admin_path) do %>
+        <div>新規作成</div>
+      <% end %>
+    </div>
+    <div class="post-list">
+      <ul>
+        <% @posts.each do |post| %>
+        <li>
+          <%= link_to(post_admin_path(post.id)) do %>
+            <span><%= post.title %></span>
+          <% end %>
+        </li>
+        <% end %>
+      </ul>
+    </div><!-- .post-list -->
+  </div><!-- .container-inner -->
+</div><!-- .container -->

@@ -7,6 +7,13 @@ Rails.application.routes.draw do
 
   get 'news/:news_id' => 'news#show', as: 'show_news'
 
+  get 'admin' => 'admin#index', as: 'index_admin'
+  get 'admin/edit' => 'admin#edit', as: 'edit_admin'
+  get 'admin/post/new' => 'admin#post_new', as: 'post_new_admin'
+  post 'admin/post/new' => 'admin#post_update'
+  get 'admin/post/:post_id' => 'admin#post', as: 'post_admin'
+  post 'admin/post/:post_id' => 'admin#post_update'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

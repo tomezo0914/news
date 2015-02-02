@@ -39,12 +39,13 @@
             </div><!-- .feature -->
             <div class="news-article clearfix">
               <ul>
-                <li><div class="item"><%= rtrim("プリンセス・クルーズ、日本人の取込強化、50周年アピール", len: 16) %></div></li>
-                <li><div class="item"><%= rtrim("i.JTB、燃油値下げ反映し「ウルトラバーゲン」開始、4月出発まで ", len: 16) %></div></li>
-                <li><div class="item"><%= rtrim("ジンエアー、関空／仁川就航、3月からデイリー", len: 16) %></div></li>
-                <li><div class="item"><%= rtrim("シンガポール航空、FFPにLCC2社、スクートとタイガーエア", len: 16) %></div></li>
-                <li><div class="item"><%= rtrim("豪州、「15万人で行く！」キャンペーン、投稿もとに旅行プラン", len: 16) %></div></li>
-                <li><div class="item"><%= rtrim("ブータン、15年は通年キャンペーン、「秘境」イメージ脱却も", len: 16) %></div></li>
+              <% @latest_news.each do |news| %>
+                <%= link_to(show_news_path(news.id)) do %>
+                  <li>
+                    <div class="item"><%= rtrim(news.title, len: 16) %></div>
+                  </li>
+                <% end %>
+              <% end %>
               </ul>
             </div>
           </div>
