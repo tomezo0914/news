@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="container-inner">
+    <%= render 'shared/global_header' %>
+
+    <div class="row show">
+      <div class="contents show-main clearfix">
+        <ul>
+          <% 6.times do |n| %>
+          <li>
+            <div class="show-box latest-news">
+              <div class="article-title">
+                <div class="soruce">
+                  <span>記事ソース:朝日新聞デジタル</span><span class="updated-at">2015年01月22日 18時45分 更新</span>
+                </div>
+                <div class="title">スカイマーク、経営再建に向け4路線から撤退、減便も</div>
+              </div>
+              <div class="news-box">
+                <div class="eye-catch">
+                  <%= image_tag("image02.jpg", { width: 260, height: 160 }) %>
+                </div>
+                <div class="feature-content">
+                  <div class="feature-description">
+                    <p><%= raw nl2br("1月28日に民事再生手続の申し立てをおこなったスカイマーク（BC）は、経営再建に向け、一部運航便の運休を決定した。2月1日には茨城／神戸／米子線から撤退するほか、複数路線を減便。3月29日には仙台／福岡線と那覇／宮古、石垣線からも撤退する。予約済みの利用者には振り替えや払い戻しで対応する。
+
+                    　なお、2月1日からは収益悪化の一因となっていたエアバスA330-300型機5機の使用を中止し、27機のボーイングB737-800型機のみで運航する。運休および減便の詳細は以下の通り。
+                                     
+                                     ▽BC、運休路線
+                                     ・2015年2月1日～3月28日
+                                     茨城／米子線 （神戸経由便）
+                                     ・2015年3月29日～8月31日 
+                                     仙台／福岡線
+                                     那覇／宮古線
+                                     那覇／石垣線
+                                     
+                                     ▽BC、減便
+                                     ・2015年2月1日～3月28日
+                                     茨城／新千歳線 BC791便 BC790便
+                                     茨城／福岡線 BC835便 BC832便
+                                     神戸／新千歳線 BC171便 BC178便
+                                     神戸／米子線 BC127便 BC120便
+                                     神戸／那覇線 BC591便 BC598便
+                                     仙台／新千歳線 BC787便 BC786便
+                                     仙台／福岡線 BC885便 BC886便（水曜日のみ運休）
+                                     中部／新千歳線 BC765便 BC766便
+                                     中部／那覇線 BC557便 BC550便
+                                     福岡／那覇線 BC507便 BC509便 BC502便 BC504便
+                                     那覇／宮古線 BC541便 BC542便
+                                     那覇／石垣線 BC569便 BC560便
+                                     羽田／石垣線 BC619便 BC660便（那覇経由便）
+                                     ・2015年3月29日～8月31日
+                                     中部／新千歳線 BC765便 BC767便 BC762便 BC766便
+                                     中部／那覇線 BC553便BC557便 BC550便 BC552便
+                                     
+                                     ※1月30日に一部加筆修正しております（編集部）。
+                                     
+                                     ") %></p>
+                  </div>
+                </div>
+              </div><!-- .news-box -->
+              <div class="other-article">
+                <div class="other-article-header">ピックアップニュースその他の記事</div>
+                <ul>
+                </ul>
+              </div><!-- .other-article -->
+            </div><!-- content-box latest-news -->
+          </li>
+        <% end %>
+        </ul>
+      </div><!-- .content -->
+
+      <div class="show-side-box">
+        <div class="show-side-box-inner">
+          <ul>
+            <% 6.times do |n| %>
+            <li>
+              <div class="sub-item">
+                <div class="sub-item-inner">
+                  <%= image_tag("image04.jpg") %>
+                  <div class="sub-item-desc">
+                    <%= rtrim("JR九州の新型車両305系の試乗会が31日、筑肥線筑前前原～唐津間で実施された。筑肥線各駅に305系導入の告知ポスターが掲出され、運転開始日は2月5日(予定)とされている。", len: 40) %>
+                  </div><!-- .sub-item-desc -->
+                </div><!-- .sub-item-inner -->
+              </div><!-- .sub-item -->
+            </li>
+            <% end %>
+          </ul>
+        </div><!-- .show-side-inner -->
+      </div><!-- .show-side-box -->
+    </div><!-- .row -->
+  </div><!-- .container-inner -->
+</div><!-- .container -->
+
+<%= render 'shared/global_footer' %>

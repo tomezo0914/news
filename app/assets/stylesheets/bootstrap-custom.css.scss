@@ -1,0 +1,17 @@
+@import "_variables";
+@import "bootstrap";
+
+.container {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  .container-inner {
+    padding-bottom: 24px;
+  }
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}

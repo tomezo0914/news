@@ -1,0 +1,43 @@
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+
+# Ignore setting yaml files.
+/config/database.yml
+/config/newrelic.yml
+/config/omniauth.yml
+/config/secrets.yml
+/config/auth.yml
+/config/elasticsearch.yml
+
+# Ignore bundler config.
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+/vendor/bundler
+
+# Ignore test files.
+.rspec
+capybara-*.html
+/coverage/
+/spec/tmp
+
+# Ignore and more.
+.DS_Store
+.sass-cache
+*.rdoc
+*.rbc
+*.swp
+*.swo
+/public/img/pictures/*
+!/public/img/pictures/default
+/public/img/user/covers/*
+!/public/img/user/covers/default
+/public/img/user/profiles/*
+!/public/img/user/profiles/default
+/db/*.sqlite3
+/public/system
+/public/uploads
+**.orig
+rerun.txt
+pickle-email-*.html

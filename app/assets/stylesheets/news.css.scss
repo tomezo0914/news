@@ -1,0 +1,231 @@
+@import "_variables";
+
+body {
+  background-color: $base-bg-color;
+  -webkit-font-smoothing: antialiased;
+
+  p {
+    color: $base-font-color;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.container-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title-header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $content-bg-color;
+  font-weight: bold;
+  .logo {
+    color: $accent-color;
+    font-size: 120%;
+  }
+}
+
+.category-header {
+  border-bottom: 1px solid $content-bg-color;
+  font-weight: bold;
+
+  a { text-decoration: none; }
+  a:link { color: $base-font-color; text-decoration: none; }
+  a:hover { color: #ffffff; text-decoration: none; }
+  a:visited { color: $base-font-color; text-decoration: none; }
+
+  .category-tabs {
+    ul {
+      margin-bottom: 0;
+      padding-left: 0px;
+
+      li {
+        list-style: none;
+        float: left;
+        padding: 8px;
+      }
+      li:hover {
+        background-color: $accent-color;
+      }
+    }
+  }
+}
+
+.caution-box {
+  margin-top: 16px;
+  .caution-header {
+    padding-left: 8px;
+    background: $caution-border-color;
+    color: $caution-header-font-color;
+    font-weight: bold;
+  }
+  .caution-list {
+    border: 4px solid $caution-border-color;
+    background: $caution-bg-color;
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 8px;
+      li {
+        list-style: none;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        .caution-item {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.contents {
+  margin-top: 16px;
+  ul {
+    margin-left: -8px;
+    margin-right: -8px;
+    -webkit-padding-start: 0px;
+
+    li {
+      list-style: none;
+      float: left;
+      width: 50%;
+    }
+  }
+}
+
+.content-box {
+  background-color: $news-bg-color;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+  height: 360px;
+
+  .title {
+    padding: 8px;
+    background: $content-bg-color;
+    .category {
+      padding: 4px;
+      border: 2px solid $accent-color;
+      color: $accent-color;
+      background: #ffffff;
+      font-weight: bold;
+      float: left;
+    }
+
+    .updated-at {
+      float: right;
+      font-size: 80%;
+    }
+  }
+}
+
+.news-box {
+  background-color: $news-bg-color;
+  padding: 8px;
+
+  a { text-decoration: none; }
+  a:link { color: $base-font-color; text-decoration: none; }
+  a:hover { color: $base-font-color; text-decoration: underline; }
+  a:visited { color: $base-font-color; text-decoration: none; }
+
+  .feature {
+    display: table;
+    .eye-catch {
+      display: table-cell;
+    }
+
+    .feature-content {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: 8px;
+
+      .feature-title {
+        font-weight: bold;
+      }
+      .feature-description {
+        font-size: 90%;
+      }
+    }
+  }
+
+  .news-article {
+    font-weight: bold;
+    ul {
+      margin-left: -8px;
+      margin-right: -8px;
+      li {
+        list-style: none;
+        float: left;
+        width: 50%;
+        .item {
+          margin-left: 8px;
+          margin-right: 8px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          border-bottom: 1px solid $content-bg-color;
+        }
+      }
+    }
+  }
+}
+
+.show {
+  display: table;
+  .show-main {
+    display: table-cell;
+    width: 70%;
+
+    ul {
+      li {
+        width: 100%;
+        padding-bottom: 16px;
+        .show-box {
+          background: #ffffff;
+        }
+      }
+    }
+  }
+
+  .show-side-box {
+    display: table-cell;
+    width: 30%;
+    vertical-align: top;
+
+    .show-side-box-inner {
+      ul {
+        li {
+          list-style: none;
+          padding-bottom: 16px;
+
+          .sub-item {
+            background: #ffffff;
+          }
+          img {
+            width: 120px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  height: 160px;
+  background: $content-bg-color;
+  position: relative;
+
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px;
+    color: $reversal-font-color;
+  }
+}

@@ -1,0 +1,158 @@
+<div class="container">
+  <div class="container-inner">
+    <%= render 'shared/global_header' %>
+
+    <div class="caution-box">
+      <div class="caution-header">CAUTION! 外務省から避難勧告が出ています！</div>
+      <div class="caution-list">
+        <ul>
+          <li><span class="glyphicon glyphicon-warning-sign caution-item"></span>外務省 海外安全ホームページ：危険・スポット・広域情報【広域情報】シリア邦人拘束事案を受けた注意喚起<span class="date">2015年01月22日</span></li>
+          <li><span class="glyphicon glyphicon-warning-sign caution-item"></span>外務省 海外安全ホームページ：危険・スポット・広域情報【広域情報】欧米諸国等に対するテロの脅威に関する注意喚起<span class="date">2015年01月16日</span></li>
+          <li><span class="glyphicon glyphicon-warning-sign caution-item"></span>外務省 海外安全ホームページ：危険・スポット・広域情報【避難勧告】全土：「避難を勧告します。渡航は延期してください。」（継続）<span class="date">2014年07月29日</span></li>
+        </ul>
+      </div>
+    </div><!-- .caution-box -->
+
+  <div class="row contents clearfix">
+    <ul>
+      <li>
+        <div class="content-box latest-news">
+          <div class="title clearfix">
+            <div class="category">新着ニュース</div>
+            <div class="updated-at">2015年01月22日 18時45分 更新</div>
+          </div>
+          <div class="news-box">
+            <div class="feature">
+              <div class="eye-catch">
+                <%= image_tag("image02.jpg", { width: 260, height: 160 }) %>
+              </div>
+              <div class="feature-content">
+                <%= link_to(show_news_path(news_id: 1)) do %>
+                <div class="feature-title">
+                  <%= rtrim("スカイマーク、経営再建に向け4路線から撤退、減便も", len: 26) %>
+                </div>
+                <% end %>
+                <div class="feature-description">
+                  <p><%= rtrim("1月28日に民事再生手続の申し立てをおこなったスカイマーク（BC）は、経営再建に向け、一部運航便の運休を決定した。2月1日には茨城／神戸／米子線から撤退するほか、複数路線を減便...", len: 80) %></p>
+                </div>
+              </div>
+            </div><!-- .feature -->
+            <div class="news-article clearfix">
+              <ul>
+                <li><div class="item"><%= rtrim("プリンセス・クルーズ、日本人の取込強化、50周年アピール", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("i.JTB、燃油値下げ反映し「ウルトラバーゲン」開始、4月出発まで ", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ジンエアー、関空／仁川就航、3月からデイリー", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("シンガポール航空、FFPにLCC2社、スクートとタイガーエア", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("豪州、「15万人で行く！」キャンペーン、投稿もとに旅行プラン", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ブータン、15年は通年キャンペーン、「秘境」イメージ脱却も", len: 16) %></div></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- content-box latest-news -->
+      </li>
+      <li>
+        <div class="content-box domestic-news">
+          <div class="title clearfix">
+            <div class="category">国内トピック</div>
+            <div class="updated-at">2015年01月22日 18時45分 更新</div>
+          </div>
+          <div class="news-box">
+            <div class="feature">
+              <div class="eye-catch">
+                <iframe width="260" height="160" src="https://www.youtube.com/embed/kXIAYvaIeP0" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="feature-content">
+                <div class="feature-title">
+                  <%= rtrim("スカイマーク、経営再建に向け4路線から撤退、減便も", len: 26) %>
+                </div>
+                <div class="feature-description">
+                  <p><%= rtrim("1月28日に民事再生手続の申し立てをおこなったスカイマーク（BC）は、経営再建に向け、一部運航便の運休を決定した。2月1日には茨城／神戸／米子線から撤退するほか、複数路線を減便...", len: 80) %></p>
+                </div>
+              </div>
+            </div><!-- .feature -->
+            <div class="news-article clearfix">
+              <ul>
+                <li><div class="item"><%= rtrim("HIS、京都に訪日専門店オープン、オプショナルツアーなど販売", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ウィラー、鉄道に参入、北近畿タンゴ鉄道を「京都丹後鉄道」に", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("日本航空、春の国内線キャンペーン、妖怪ウォッチとコラボも", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ジンエアー、関空／仁川就航、3月からデイリー", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("豪州、「15万人で行く！」キャンペーン、投稿もとに旅行プラン", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ブータン、15年は通年キャンペーン、「秘境」イメージ脱却も", len: 16) %></div></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- content-box domestic-news -->
+      </li>
+
+      <li>
+        <div class="content-box overseas-news">
+          <div class="title clearfix">
+            <div class="category">海外トピック</div>
+            <div class="updated-at">2015年01月22日 18時45分 更新</div>
+          </div>
+          <div class="news-box">
+            <div class="feature">
+              <div class="eye-catch">
+                <%= image_tag("image01.jpg", { width: 260, height: 160 } ) %>
+              </div>
+              <div class="feature-content">
+                <div class="feature-title">
+                  <%= rtrim("フォトニュース：香港の現在、観光への影響見られず【速報】", len: 26) %>
+                </div>
+                <div class="feature-description">
+                  <p><%= rtrim("香港政府観光局（HKTB）とキャセイパシフィック航空（CX）は11月27日から30日にかけてFAMツアーを実施した。学生のデモによる混乱が大きな注目を集めている中で", len: 80) %></p>
+                </div>
+              </div>
+            </div><!-- .feature -->
+            <div class="news-article clearfix">
+              <ul>
+                <li><div class="item"><%= rtrim("プリンセス・クルーズ、日本人の取込強化、50周年アピール", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("i.JTB、燃油値下げ反映し「ウルトラバーゲン」開始、4月出発まで ", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ジンエアー、関空／仁川就航、3月からデイリー", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("シンガポール航空、FFPにLCC2社、スクートとタイガーエア", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("豪州、「15万人で行く！」キャンペーン、投稿もとに旅行プラン", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ブータン、15年は通年キャンペーン、「秘境」イメージ脱却も", len: 16) %></div></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- content-box overseas-news -->
+      </li>
+
+      <li>
+        <div class="content-box pickup-news">
+          <div class="title clearfix">
+            <div class="category">ピックアップ</div>
+            <div class="updated-at">2015年01月22日 18時45分 更新</div>
+          </div>
+          <div class="news-box">
+            <div class="feature">
+              <div class="eye-catch">
+                <%= image_tag("image03.jpg", { width: 260, height: 160 } ) %>
+              </div>
+              <div class="feature-content">
+                <div class="feature-title">
+                  <%= rtrim("トップインタビュー：ハワイ州観光局局長のエリック高畑氏", len: 26) %>
+                </div>
+                <div class="feature-description">
+                  <p><%= rtrim("日本人出国者数が前年比3.1％減（2014年1月～10月累計）と海外旅行市場が停滞するなか、2014年の日本人訪問者数を1％増の154万人と見込むハワイ。厳しい環境が続くと予想する2015年においてもプラス成長を目標に据え、業界内外のハワイに関わる全体の力で送客につなげていく方針だ。大胆な仕掛けの成功体験を活かしつつ、「閑散期の需要喚起がカギになる」というハワイ州観光局（HTJ）局長のエリック高畑", len: 80) %></p>
+                </div>
+              </div>
+            </div><!-- .feature -->
+            <div class="news-article clearfix">
+              <ul>
+                <li><div class="item"><%= rtrim("ハワイ、「第7回　ウクレレピクニック　イン　ハワイ＆ベネフィットコンサート」開催", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ハワイ・ホノルル、3月06～08日「第21回ホノルル　フェスティバル」開催", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ANAセ、15年度目標人員は海外10％増－国内2％増、欠航で見舞金も", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("シンガポール航空、FFPにLCC2社、スクートとタイガーエア", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("豪州、「15万人で行く！」キャンペーン、投稿もとに旅行プラン", len: 16) %></div></li>
+                <li><div class="item"><%= rtrim("ブータン、15年は通年キャンペーン、「秘境」イメージ脱却も", len: 16) %></div></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- content-box pickup-news -->
+      </li>
+    </ul>
+    </div><!-- .content -->
+  </div><!-- .container-inner -->
+</div><!-- .container -->
+<%= render 'shared/global_footer' %>
